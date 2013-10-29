@@ -25,7 +25,7 @@
               Ext.Ajax.request({
                   url: 'getBoreholes.do',
                   params: {
-           	          maxFeatures : 1000,
+           	          maxFeatures : 10000,
            	       	  //featureId : 'boreholes.5271'
                   },
                   callback: function (options, success, response) {
@@ -50,8 +50,8 @@
                           nodes: [{
                               type: "cameras/orbit",
                               id: "camera",
-                              yaw: 40,
-                              pitch: -20,
+                              yaw: 0,
+                              pitch: 0,
                               zoom: 10,
                               zoomSensitivity: 1,
                               eye: {
@@ -136,7 +136,7 @@
 
     <body>
         <p>Hello World!</p>
-        <canvas id="webgl-sprint" width="512px" height="512px"></canvas>
+        <canvas id="webgl-sprint" width="1024px" height="1024px"></canvas>
     </body>
 
 </html>
